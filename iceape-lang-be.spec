@@ -5,7 +5,7 @@ Summary:	Belarusian resources for Iceape
 Summary(pl.UTF-8):	Białoruskie pliki językowe dla Iceape
 Name:		iceape-lang-%{_lang}
 Version:	1.1.9
-Release:	1
+Release:	2
 License:	GPL
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/seamonkey/releases/%{version}/contrib-localized/seamonkey-%{version}.%{_lare}.langpack.xpi
@@ -18,6 +18,7 @@ BuildRequires:	zip
 Requires(post,postun):	iceape >= %{version}
 Requires(post,postun):	textutils
 Requires:	iceape >= %{version}
+Obsoletes:	seamonkey-lang-be
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
